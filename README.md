@@ -5,10 +5,10 @@ This project aims to include a set of plugins and add-ons to [FitNesse](http://f
 to enhance its capabilities and make it into a more full-featured testing platform. The
 planned add-ons include:
 
-    - [Cukable](http://github.com/wapcaplet/cukable): [Cucumber](http://cukes.info)
-      frontend for FitNesse
-    - Mastiffe: Manual testing interface for FitNesse
-    - rSel(?): Selenium support for FitNesse
+- [Cukable](http://github.com/wapcaplet/cukable): [Cucumber](http://cukes.info)
+  frontend for FitNesse
+- Mastiffe: Manual testing interface for FitNesse
+- rSel(?): Selenium support for FitNesse
 
 FitNexus is being developed by the [Automation Excellence](http://github.com/a-e) team, and
 is still in early development.
