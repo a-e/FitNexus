@@ -1,0 +1,3 @@
+[submodule "gems/rsel-0.0.1"]
+	path = gems/rsel-0.0.1
+	url = git@github.com:a-e/rsel.git
