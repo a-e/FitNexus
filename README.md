@@ -7,11 +7,61 @@ planned add-ons include:
 
 - [Cukable](http://github.com/wapcaplet/cukable): [Cucumber](http://cukes.info)
   frontend for FitNesse
-- Mastiffe: Manual testing interface for FitNesse
+- [Mastiffe](http://github.com/Ken-g6/Mastiffe): Manual testing interface for FitNesse
 - [Rsel](http://github.com/a-e/rsel): Ruby-based Selenium support for FitNesse
 
 FitNexus is being developed by the [Automation Excellence](http://github.com/a-e) team, and
 is still in early development.
+
+
+Installation
+------------
+
+Clone this repository:
+
+    $ git clone git://github.com/a-e/FitNexus.git
+    (or, if you have edit privileges):
+    $ git clone git@github.com:a-e/FitNexus.git
+
+After cloning the repo, do a submodule update to pull the latest code from the
+related repositories:
+
+    $ cd FitNexus
+    $ git submodule update
+
+If you haven't already, install [RVM](http://www.beginrescueend.com):
+
+    $ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+
+[Follow the instructions](http://www.beginrescueend.com/rvm/install/) to configure it.
+When you get to the part about installing Ruby, use Ruby Enterprise Edition 1.8.7:
+
+    $ rvm install ree
+
+Switch to that ruby:
+
+    $ rvm ree
+
+Create a gemset for FitNexus:
+
+    $ rvm gemset create fitnexus
+    $ rvm ree@fitnexus
+
+The `.rvmrc` file in the FitNexus directory will cause RVM to automatically
+switch to the `ree@fitnexus` gem whenever you `cd` into this directory.
+Install bundler in your global gemset:
+
+    $ rvm ree@global
+    $ rvm install bundler
+
+Then install the gem dependencies for FitNexus:
+
+    $ rvm ree@fitnexus
+    $ bundle install
+
+Run FitNesse:
+
+    $ ./run.sh
 
 
 License
