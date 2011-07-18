@@ -1,6 +1,0 @@
-[submodule "gems/rsel"]
-	path = gems/rsel
-	url = git@github.com:a-e/rsel.git
-[submodule "gems/rubyslim"]
-	path = gems/rubyslim
-	url = git@github.com:wapcaplet/rubyslim.git
