@@ -1,12 +1,20 @@
 PATH
-  remote: gems/rsel
+  remote: submodules/cukable
+  specs:
+    cukable (0.1.2)
+      cucumber
+      diff-lcs
+      json
+
+PATH
+  remote: submodules/rsel
   specs:
     rsel (0.0.1)
       selenium-client
       xpath
 
 PATH
-  remote: gems/rubyslim
+  remote: submodules/rubyslim
   specs:
     rubyslim (0.1.1)
 
@@ -20,10 +28,6 @@ GEM
       gherkin (~> 2.4.5)
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.5)
-    cukable (0.1.2)
-      cucumber
-      diff-lcs
-      json
     diff-lcs (1.1.2)
     gherkin (2.4.5)
       json (>= 1.4.6)
@@ -38,6 +42,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cukable (= 0.1.2)
+  cukable!
   rsel!
   rubyslim!
