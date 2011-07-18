@@ -8,7 +8,7 @@ planned add-ons include:
 - [Cukable](http://github.com/wapcaplet/cukable): [Cucumber](http://cukes.info)
   frontend for FitNesse
 - Mastiffe: Manual testing interface for FitNesse
-- rSel(?): Selenium support for FitNesse
+- [Rsel](http://github.com/a-e/rsel): Ruby-based Selenium support for FitNesse
 
 FitNexus is being developed by the [Automation Excellence](http://github.com/a-e) team, and
 is still in early development.
