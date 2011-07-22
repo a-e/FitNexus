@@ -47,8 +47,12 @@ Create a gemset for FitNexus:
     $ rvm gemset create fitnexus
     $ rvm ree@fitnexus
 
-The `.rvmrc` file in the FitNexus directory will cause RVM to automatically
-switch to the `ree@fitnexus` gem whenever you `cd` into this directory.
+Once your gemset is created, you can switch to it at any time with `rvm
+ree@fitnexus`. To do this automatically whenever you `cd` into the `FitNexus`
+directory, create an `.rvmrc` file containing that command:
+
+    $ echo "rvm ree@fitnexus" > .rvmrc
+
 Install bundler in your global gemset:
 
     $ rvm ree@global
