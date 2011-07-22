@@ -3,7 +3,7 @@
 	url = git@github.com:a-e/rsel.git
 [submodule "submodules/mastiffe"]
 	path = submodules/mastiffe
-	url = git@github.com:Ken-g6/Mastiffe.git
+	url = git@github.com:a-e/Mastiffe.git
 [submodule "submodules/cukable"]
 	path = submodules/cukable
 	url = git@github.com:wapcaplet/cukable.git
