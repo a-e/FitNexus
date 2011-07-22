@@ -1,0 +1,5 @@
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {bundle exec rubyslim}
+!define COMMAND_PATTERN {bundle exec rubyslim}
+
+!contents -R2 -g -p -f -h

@@ -1,0 +1,4 @@
+!| script | selenium test | http://www.fitnesse.org |
+| Open browser |
+| Page loads in | 10 | seconds or less |
+| Close browser |
