@@ -1,9 +1,6 @@
 [submodule "submodules/rsel"]
 	path = submodules/rsel
 	url = git@github.com:a-e/rsel.git
-[submodule "submodules/rubyslim"]
-	path = submodules/rubyslim
-	url = git@github.com:wapcaplet/rubyslim.git
 [submodule "submodules/mastiffe"]
 	path = submodules/mastiffe
 	url = git@github.com:Ken-g6/Mastiffe.git

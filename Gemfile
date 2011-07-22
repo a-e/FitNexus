@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'rubyslim-unofficial'
+
 gem 'cukable', :path => 'submodules/cukable'
-gem 'rubyslim', :path => 'submodules/rubyslim'
 gem 'rsel', :path => 'submodules/rsel'
