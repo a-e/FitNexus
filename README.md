@@ -23,11 +23,16 @@ Clone this repository:
     (or, if you have edit privileges):
     $ git clone git@github.com:a-e/FitNexus.git
 
-After cloning the repo, do a submodule update to pull the latest code from the
-related repositories:
+After cloning the repo, initialize and update the submodules to pull the latest
+code from the related repositories:
 
     $ cd FitNexus
+    $ git submodule init
     $ git submodule update
+
+You should see the `submodules/cukable`, `submodules/mastiffe`, and
+`submodules/rsel` directories being turned into git repositories, with the
+latest code pulled from the respective repositories.
 
 If you haven't already, install [RVM](http://www.beginrescueend.com):
 
