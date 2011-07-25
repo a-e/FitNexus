@@ -9,9 +9,10 @@ PATH
 PATH
   remote: submodules/rsel
   specs:
-    rsel (0.0.1)
+    rsel (0.0.4)
+      rubyslim-unofficial
       selenium-client
-      xpath
+      xpath (>= 0.1.4)
 
 GEM
   remote: http://rubygems.org/
