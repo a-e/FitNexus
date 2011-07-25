@@ -27,8 +27,7 @@ After cloning the repo, initialize and update the submodules to pull the latest
 code from the related repositories:
 
     $ cd FitNexus
-    $ git submodule init
-    $ git submodule update
+    $ git submodule update --init
 
 You should see the `submodules/cukable`, `submodules/mastiffe`, and
 `submodules/rsel` directories being turned into git repositories, with the
@@ -61,7 +60,7 @@ directory, create an `.rvmrc` file containing that command:
 Install bundler in your global gemset:
 
     $ rvm ree@global
-    $ rvm install bundler
+    $ gem install bundler
 
 Then install the gem dependencies for FitNexus:
 
