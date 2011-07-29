@@ -1,0 +1,13 @@
+| script | selenium test | !-http://localhost:8070-! |
+| Open browser |
+| Maximize browser |
+| Visit | /form |
+| Enable | I like cheese | checkbox |
+| Checkbox | I like cheese | is enabled |
+| Disable | I like cheese | checkbox |
+| Checkbox | I like cheese | is disabled |
+| Enable | I like salami | checkbox | !{within:salami_checkbox} |
+| Checkbox | I like salami | is enabled | !{within:salami_checkbox} |
+| Disable | I like salami | checkbox | !{within:salami_checkbox} |
+| Checkbox | I like salami | is disabled | !{within:salami_checkbox} |
+| Close browser |

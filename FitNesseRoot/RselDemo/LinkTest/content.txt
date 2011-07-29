@@ -1,0 +1,14 @@
+| script | selenium test | !-http://localhost:8070-! |
+| Open browser | 
+| Maximize browser |
+| Visit | / |
+| See | Welcome |
+| See | This is a Sinatra webapp for unit testing Rsel |
+| Link | About this site | exists |
+| Click link | About this site |
+| See | This site is really cool |
+| See title | About this site |
+| Click back |
+| See | This is a Sinatra webapp for unit testing Rsel |
+| Do not see | This site is really cool |
+| Close browser |

@@ -1,3 +1,5 @@
-!1 Welcome to FitNexus
+!1 Welcome to !-FitNexus-!
 
-RubySelenium
+ * RselDemo: Test suite that demonstrates how to use Rsel for writing Selenium-driven web application tests
+
+
