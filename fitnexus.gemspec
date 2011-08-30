@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     'bin/fitnexus',
   ]
+  s.require_path = 'lib'
 
   s.executables = ['fitnexus']
 end
