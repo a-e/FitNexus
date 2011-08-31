@@ -1,0 +1,8 @@
+!1 Welcome to !-FitNexus-!
+
+Now that you've set up your !-FitNexus-! wiki, you can start writing some tests. Check out the templates below to get started.
+
+ * MastiffeTemplate - for manual tests
+ * RselTemplate - for automated tests using Selenium
+ * CukableTemplate - for automated tests using Cucumber
+

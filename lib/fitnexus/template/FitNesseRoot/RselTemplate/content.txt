@@ -1,0 +1,12 @@
+This subwiki is a template for writing Selenium-automated tests using Rsel. It provides some basic configuration and suggestions, but you'll need to customize it to meet your needs. See the [[Rsel documentation][http://rdoc.info/github/a-e/rsel/master/frames]] for more details.
+
+These variables must be defined in order for Rsel to work:
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {rubyslim}
+!define COMMAND_PATTERN {rubyslim}
+
+If you're using [[Bundler][http://gembundler.com]], you may need to change ''rubyslim'' to ''bundle exec rubyslim'' in the lines above.
+
+Put your tests in subpages of this page. See the example tests below for ideas.
+
+!contents -R2 -g -p -f -h

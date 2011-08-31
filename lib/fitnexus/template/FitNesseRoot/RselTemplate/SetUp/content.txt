@@ -1,0 +1,4 @@
+This page sets up your tests, and is automatically loaded by all sibling pages and their descendants. For Rsel, you only need one thing here:
+
+!| import |
+| Rsel |

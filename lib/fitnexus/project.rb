@@ -1,10 +1,10 @@
 require 'fileutils'
 require 'open3'
 require 'timeout'
+require 'ftools' # For File.copy
 
 FITNESSE_VERSION = "20110104"
 FITNESSE_DOWNLOAD = "http://fitnesse.org/fitnesse.jar?responder=releaseDownload\\&release=#{FITNESSE_VERSION}"
-
 
 module FitNexus
 
@@ -76,7 +76,7 @@ module FitNexus
         puts "Stopping FitNesse server ..."
         Process.kill 'HUP', pipe.pid
         if root_created
-          puts "#{root_dir} created."
+          puts "Created #{root_dir}"
         else
           puts "Error: #{root_dir} wasn't created. Quitting."
           Process.exit
@@ -84,7 +84,8 @@ module FitNexus
       # If it didn't start, display an appropriate message and/or quit
       else
         if root_created
-          puts "FitNesse didn't start, but that's OK, because #{root_dir} was created."
+          puts "FitNesse didn't start, but that's OK."
+          puts "Created #{root_dir}"
         else
           puts "Error: #{root_dir} wasn't created. Quitting."
           Process.exit
@@ -94,12 +95,21 @@ module FitNexus
   end
 
 
+  # Install project template onto `path`
+  def install_template(path)
+    puts "Installing project template to #{path} ..."
+    template_dir = File.expand_path('../template', __FILE__)
+    FileUtils.cp_r("#{template_dir}/.", path)
+  end
+
+
   # Create a FitNexus project in the given path.
   def create_project(path)
     path = File.expand_path(path)
     create_dir(path)
     download_fitnesse(path)
     create_fitnesse_root(path)
+    install_template(path)
   end
 
 end # module FitNexus

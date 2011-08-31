@@ -1,0 +1,12 @@
+This is where you may optionally define reusable scenarios that are shared by your Rsel script tables. Here are a couple of examples:
+
+| scenario | Login with username _ and password _ | username, password |
+| Visit | /login |
+| Fill in | Username | with | @username |
+| Fill in | Password | with | @password |
+| Press | Log in |
+| See | Welcome, @username |
+
+| scenario | Logout |
+| Click | Log out | link |
+| See | You are logged out |

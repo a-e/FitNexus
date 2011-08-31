@@ -1,0 +1,15 @@
+The website you are testing:
+!define SITE_URL {http://www.example.com}
+
+Where Selenium Server is running (host name or IP):
+!define SELENIUM_HOST {localhost}
+
+Here's a script table that uses the "Login" and "Logout" scenarios defined in ScenarioLibrary:
+| script | selenium test | ${SITE_URL} | !{host:${SELENIUM_HOST}} |
+| Open browser |
+| Maximize browser |
+| Login with username douglas and password slartibartfast |
+| See | Sirius Cybernetics Corporation |
+| Do not see | Marketing Division |
+| Logout |
+| Close browser |

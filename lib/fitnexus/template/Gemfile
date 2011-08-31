@@ -1,0 +1,6 @@
+source 'http://rubygems.org'
+
+gem 'rubyslim-unofficial'
+gem 'rsel'
+gem 'cukable'
+
