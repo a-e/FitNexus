@@ -3,37 +3,57 @@ FitNexus
 
 This project aims to include a set of plugins and add-ons to [FitNesse](http://fitnesse.org/)
 to enhance its capabilities and make it into a more full-featured testing platform. The
-planned add-ons include:
+add-ons include:
 
 - [Cukable](http://github.com/wapcaplet/cukable): [Cucumber](http://cukes.info)
   frontend for FitNesse
 - [Mastiffe](http://github.com/Ken-g6/Mastiffe): Manual testing interface for FitNesse
 - [Rsel](http://github.com/a-e/rsel): Ruby-based Selenium support for FitNesse
 
-FitNexus is being developed by the [Automation Excellence](http://github.com/a-e) team, and
-is still in early development.
+FitNexus is being developed by the [Automation Excellence](http://github.com/a-e)
+team, and is still in early development. So far, it has only been tested on
+Linux; it might work on OSX, but it will definitely not work on Windows.
 
 
 Installation
 ------------
 
-Clone this repository:
+FitNexus is distributed as a lightweight gem file, and consists primarily of a
+Ruby script that installs and configures a new FitNesse wiki in a directory of
+your choice. To install FitNexus:
 
-    $ git clone git://github.com/a-e/FitNexus.git
-    (or, if you have edit privileges):
-    $ git clone git@github.com:a-e/FitNexus.git
+    $ gem install fitnexus
 
-After cloning the repo, initialize and update the submodules to pull the latest
-code from the related repositories:
+To create a new project in `/tmp/foo`, run:
 
-    $ cd FitNexus
-    $ git submodule update --init
+    $ fitnexus /tmp/foo
 
-You should see the `submodules/cukable`, `submodules/mastiffe`, and
-`submodules/rsel` directories being turned into git repositories, with the
-latest code pulled from the respective repositories.
+If all goes to plan, this will create the following files and folders in
+`/tmp/foo`:
 
-If you haven't already, install [RVM](http://www.beginrescueend.com):
+- `fitnesse.jar`: FitNesse executable
+- `FitNesseRoot`: Wiki files and content
+- `Gemfile`: Gem dependencies to be installed
+- `mastiffe`: Symlink to Mastiffe files
+- `Mastiffe`: Git clone of Mastiffe
+- `plugins.properties`: FitNesse configuration
+- `run.sh`: Script to start up the wiki
+
+There's one more thing you need to do manually before FitNexus will be fully
+installed, and that's to install the gem dependencies (Rsel and Cukable). This
+is not handled automatically because FitNexus doesn't know whether you want to
+use [RVM](http://beginrescueend.com) or not.
+
+If you do NOT want to use RVM, you need to ensure that you have Ruby and
+Rubygems installed systemwide. Then do:
+
+    $ cd /tmp/foo
+    $ gem install bundler
+    $ bundle install
+
+Then skip ahead to "Running FitNexus" below.
+
+If you do want to use RVM, then begin by doing this:
 
     $ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
@@ -67,9 +87,20 @@ Then install the gem dependencies for FitNexus:
     $ rvm ree@fitnexus
     $ bundle install
 
-Run FitNesse:
+
+Running FitNexus
+----------------
+
+FitNexus is just a regular FitNesse wiki with a few enhancements. A startup
+script is provided, which you can edit to meet your needs (for instance, if you
+want to run on a port other than 8080). Just run this:
 
     $ ./run.sh
+
+Then visit `http://localhost:8080` (or whatever hostname you're using) in your
+web browser. You should get a FitNexus welcome page, with links to some
+templates that will help you get started writing tests.
+
 
 
 License
