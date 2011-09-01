@@ -1,6 +1,0 @@
-[submodule "submodules/rsel"]
-	path = submodules/rsel
-	url = git@github.com:a-e/rsel.git
-[submodule "submodules/mastiffe"]
-	path = submodules/mastiffe
-	url = git@github.com:a-e/Mastiffe.git

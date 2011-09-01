@@ -103,12 +103,23 @@ module FitNexus
   end
 
 
+  # Install Mastiffe into the given path
+  def install_mastiffe(path)
+    puts "Installing Mastiffe into #{path} ..."
+    Dir.chdir(path) do
+      `git clone git://github.com/a-e/Mastiffe.git`
+      `ln -sv #{path}/Mastiffe/FitNesseRoot/files/mastiffe #{path}/FitNesseRoot/files/mastiffe`
+      `ln -sv #{path}/Mastiffe/mastiffe #{path}/mastiffe`
+    end
+  end
+
   # Create a FitNexus project in the given path.
   def create_project(path)
     path = File.expand_path(path)
     create_dir(path)
     download_fitnesse(path)
     create_fitnesse_root(path)
+    install_mastiffe(path)
     install_template(path)
   end
 
