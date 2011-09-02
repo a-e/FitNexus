@@ -1,0 +1,16 @@
+This page is an example of what a Mastiffe test looks like. When you edit this page, you should see a section above the editing area with Mastiffe buttons for adding new steps or editing existing ones.
+
+!define passbutton {Pass}
+!define failbutton {Fail}
+
+| table: Mastiffe test |
+| Test step | Expected result | Example data |
+| Start the test |!- a FitNesse dialog appears -!| |
+| Click ${passbutton} | The step passes | |
+| Click ${failbutton} | the step fails | |
+| This is a really long test step.  I wonder how it will wrap, or if it will wrap at all, or if it will simply create a really wide dialog? | The text wraps | |
+|!- Look at <img src="/files/images/FitNesseLogo.gif" /> -!|!- The FitNesse logo appears. -!| |
+| Click on http://www.automation-excellence.com/ | The link works.  After clicking on it the <a href="www.automation-excellence.com">Automation Excellence page</a> appears. But this HTML still looks like HTML. | |
+| Call HelperTests.GoogleFor | | |
+| Call .MastiffeDemo.HelperTests.GoogleFor | | searchengine:Yahoo! |
+|!- This|step|is|escaped -!| the step is pipe-delimited |!-Like|this|text|is.-!|

@@ -1,0 +1,7 @@
+This page sets up your tests, and is automatically loaded by all sibling pages and their descendants.
+
+!| import |
+| mastiffe |
+
+| script | mastiffe test |
+| Show | mastiffe tag |

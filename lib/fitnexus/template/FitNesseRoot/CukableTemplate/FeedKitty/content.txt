@@ -1,0 +1,8 @@
+This page is an example of a Cukable feature. The steps in this table must be defined normally in your Cucumber step definitions.
+
+!| Table: Cuke                       |
+| Feature: Feed kitty                |
+|   Scenario: Canned food            |
+|     Given I have a can of cat food |
+|     When I feed it to my cat       |
+|     Then the cat should purr       |

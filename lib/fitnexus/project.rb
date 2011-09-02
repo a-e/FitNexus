@@ -113,14 +113,32 @@ module FitNexus
     end
   end
 
+  def startup_message(path)
+    puts "------------------"
+    puts "FitNexus installer"
+    puts "------------------"
+  end
+
+  def success_message(path)
+    puts "Done!"
+    puts "-----"
+    puts "Start using your new wiki like this:"
+    puts "  $ cd #{path}"
+    puts "  $ ./run.sh"
+    puts "Please report any problems to http://github.com/a-e/FitNexus/issues"
+  end
+
   # Create a FitNexus project in the given path.
   def create_project(path)
     path = File.expand_path(path)
+    startup_message(path)
     create_dir(path)
     download_fitnesse(path)
     create_fitnesse_root(path)
     install_mastiffe(path)
     install_template(path)
+    # TODO: Error handling
+    success_message(path)
   end
 
 end # module FitNexus

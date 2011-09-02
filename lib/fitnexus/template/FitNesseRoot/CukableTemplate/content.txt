@@ -1,0 +1,12 @@
+This subwiki has some examples of how to write automated Cucumber tests using Cukable. See the [[Cukable documentation][http://rdoc.info/github/wapcaplet/cukable/frames]] for more comprehensive information.
+
+If you already have a suite of Cucumber tests, and you'd like to convert them for use by Cukable, [[use the cuke2fit script][http://rdoc.info/github/wapcaplet/cukable/master/file/docs/converting.md]]. You'll also need to [[configure Cucumber with the Slim JSON output formatter][http://rdoc.info/github/wapcaplet/cukable/master/file/docs/install.md]].
+
+The main subwiki for your Cukable tests must include these lines:
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {rubyslim}
+!define COMMAND_PATTERN {rubyslim}
+
+If you're using [[Bundler][http://gembundler.com]], you may need to change ''rubyslim'' to ''bundle exec rubyslim'' in the lines above.
+
+!contents -R2 -g -p -f -h

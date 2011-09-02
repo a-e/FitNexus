@@ -1,0 +1,10 @@
+This subwiki is a template for writing manual tests using Mastiffe. Some basic configuration settings are provided, along with example tests. See the [[Mastiffe documentation][http://github.com/a-e/Mastiffe]] for more information.
+
+These variables must be defined in order for Mastiffe to work:
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {rubyslim}
+!define COMMAND_PATTERN {rubyslim}
+
+If you're using [[Bundler][http://gembundler.com]], you may need to change ''rubyslim'' to ''bundle exec rubyslim'' in the lines above.
+
+!contents -R2 -g -p -f -h
