@@ -122,10 +122,20 @@ module FitNexus
   def success_message(path)
     puts "Done!"
     puts "-----"
-    puts "Start using your new wiki like this:"
+    puts "You still need to install some gems manually; a bundler Gemfile is"
+    puts "provided, so all you really need to do is:"
+    puts "  $ cd #{path}"
+    puts "  $ gem install bundler"
+    puts "  $ bundle install"
+    puts "But there are some extra steps if you want to use RVM. See the README:"
+    puts "  http://github.com/a-e/FitNexus"
+    puts "for more information."
+    puts ""
+    puts "Once all gems are installed, you can start using your new wiki:"
     puts "  $ cd #{path}"
     puts "  $ ./run.sh"
     puts "Please report any problems to http://github.com/a-e/FitNexus/issues"
+    puts "Enjoy!"
   end
 
   # Create a FitNexus project in the given path.
