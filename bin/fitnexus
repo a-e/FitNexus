@@ -8,13 +8,11 @@ Usage:
 Where <path> is the directory where you want to create the new project."
 
 # Main program
-if __FILE__ == $0
-  if ARGV.count != 1
-    puts USAGE
-    Process.exit
-  else
-    include FitNexus
-    create_project(ARGV.pop)
-  end
+if ARGV.count != 1
+  puts USAGE
+  Process.exit
+else
+  include FitNexus
+  create_project(ARGV.pop)
 end
 
