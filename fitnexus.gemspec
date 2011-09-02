@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
     Cucumber testing.
   EOS
   s.authors = ["Automation Excellence"]
-  s.email = "epierce@automation-excellence.com"
+  s.email = "wapcaplet88@gmail.com"
   s.homepage = "http://github.com/a-e/fitnexus"
   s.platform = Gem::Platform::RUBY
 
