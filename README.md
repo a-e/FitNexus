@@ -24,12 +24,12 @@ your choice. To install FitNexus:
 
     $ sudo gem install fitnexus
 
-To create a new project in `/tmp/foo`, run:
+To create a new project in `~/my_wiki`, run:
 
-    $ fitnexus /tmp/foo
+    $ fitnexus ~/my_wiki
 
 If all goes to plan, this will create the following files and folders in
-`/tmp/foo`:
+`~/my_wiki`:
 
 - `fitnesse.jar`: FitNesse executable
 - `FitNesseRoot`: Wiki files and content
@@ -47,8 +47,8 @@ use [RVM](http://beginrescueend.com) or not.
 If you do NOT want to use RVM, you need to ensure that you have Ruby and
 Rubygems installed systemwide. Then do:
 
-    $ cd /tmp/foo
     $ sudo gem install bundler
+    $ cd ~/my_wiki
     $ bundle install
 
 Then skip ahead to "Running FitNexus" below.
@@ -72,13 +72,14 @@ Create a gemset for FitNexus:
     $ rvm ree@fitnexus
 
 Once your gemset is created, you can switch to it at any time with `rvm
-ree@fitnexus`. To do this automatically whenever you `cd` into the `FitNexus`
-directory, create an `.rvmrc` file containing that command:
+ree@fitnexus`. To do this automatically whenever you `cd` into your FitNexus
+directory (i.e., `~/my_wiki`), create an `.rvmrc` file containing that command:
 
-    $ echo "rvm ree@fitnexus" > .rvmrc
+    $ echo "rvm ree@fitnexus" > ~/my_wiki/.rvmrc
 
 Install bundler in your global gemset:
 
+    $ cd ~/my_wiki
     $ rvm ree@global
     $ gem install bundler
 
