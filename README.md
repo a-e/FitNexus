@@ -22,7 +22,7 @@ FitNexus is distributed as a lightweight gem file, and consists primarily of a
 Ruby script that installs and configures a new FitNesse wiki in a directory of
 your choice. To install FitNexus:
 
-    $ gem install fitnexus
+    $ sudo gem install fitnexus
 
 To create a new project in `/tmp/foo`, run:
 
@@ -48,7 +48,7 @@ If you do NOT want to use RVM, you need to ensure that you have Ruby and
 Rubygems installed systemwide. Then do:
 
     $ cd /tmp/foo
-    $ gem install bundler
+    $ sudo gem install bundler
     $ bundle install
 
 Then skip ahead to "Running FitNexus" below.
