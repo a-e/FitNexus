@@ -15,6 +15,23 @@ team, and is still in early development. So far, it has only been tested on
 Linux; it might work on OSX, but it will definitely not work on Windows.
 
 
+Prerequisites
+-------------
+
+Before installing FitNexus, you will need:
+
+- [ruby](http://ruby-lang.org)
+- [rubygems](http://rubygems.org)
+- [git](http://git-scm.com)
+
+All of these should be available through your usual package manager. In Ubuntu:
+
+    $ sudo apt-get install ruby rubygems git
+
+FitNexus will only work in a Unix-like environment. So far, it has only been
+tested on Ubuntu and CentOS.
+
+
 Installation
 ------------
 
