@@ -74,8 +74,12 @@ If you do want to use RVM, then begin by doing this:
 
     $ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
-[Follow the instructions](http://www.beginrescueend.com/rvm/install/) to configure it.
-When you get to the part about installing Ruby, use Ruby Enterprise Edition 1.8.7:
+[Follow the instructions to configure RVM](http://www.beginrescueend.com/rvm/install/)
+before proceeding with the steps below. Most imporantly, you'll need to add a
+line to your bash profile (`~/.bashrc` or `~/.bash_profile`), then `source` it
+so it'll take effect immediately. This allows the `rvm` command to work in a
+terminal session. Once you get that working, install Ruby Enterprise Edition
+1.8.7:
 
     $ rvm install ree
 
