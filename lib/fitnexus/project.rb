@@ -22,7 +22,7 @@ module FitNexus
 
 
   # Attempt to create a new directory at the given `path`. If
-  # a file or directory already exists there
+  # a file or directory already exists there, prompt for removal.
   def create_dir(path)
     is_file = File.file?(path)
     is_dir = File.directory?(path)
